@@ -1,0 +1,43 @@
+https://www.nytimes.com/ ok
+https://edition.cnn.com/ ok 
+https://www.nbcnews.com/ ok 
+https://www.foxnews.com/ ok 
+https://timesofindia.indiatimes.com/ => 50/50 ==> Fixed: Ok
+https://www.usatoday.com/ => None ==> Fixed: Ok
+https://www.indiatoday.in/ ok
+https://www.theguardian.com/ => print(a['href']) ==> Fixed: Ok
+https://www.reuters.com/ => ok
+https://www.breakingnews.ie/ => ok
+https://www.thesun.co.uk/ => Ok
+https://www.dailymail.co.uk/ 70/30 ==> Fixed: Ok
+---------------------------
+https://www.bangkokpost.com/ Ok
+http://www.asianage.com/ Ok
+https://www.telegraphindia.com/ Ok
+https://www.thestar.com.my/ => Fail ==> Fixed: Ok
+https://www.deccanherald.com/ ok
+https://www.dawn.com/ ok
+https://www.business-standard.com/ Ok
+
+--------------------------------------
+https://www.wsj.com' #forbidden ==> Ok
+http://www.startribune.com' #forbidden ==> Ok
+https://www.newsday.com'  #newspaper #cannot_crawl ==> Ok
+https://www.thesun.co.uk'  #level0 #cannot_crawl ==> Ok
+https://www.mirror.co.uk'  #root #cannot_crawl ==> Ok
+https://www.thetimes.co.uk/'  #root #cannot_crawl ==> ok
+https://www.dailymail.co.uk'  #newspaper #got_link #cannot_crawl ==> Ok
+https://www.washingtonpost.com'  #root #got_link #cannot_crawl ==> ok
+
+# Works
+# List UK
+https://metro.co.uk'  #newspaper #crawled ==> Ok
+https://www.telegraph.co.uk'  #newspaper #crawled #paid ==> Form
+
+# List US
+https://cnn.com'  #newspaper #crawled #cannot_crawl_politics ==> Ok
+https://www.usatoday.com'  #newspaper #crawled ==> Ok
+http://www.nytimes.com'  #level1 #crawled ==> Ok
+https://nypost.com'  #newspaper #crawled ==> Ok
+https://www.chicagotribune.com'  #level2 #crawled ==> Ok
+https://www.bostonglobe.com'  #newspaper #crawled #paid ==> Ok
