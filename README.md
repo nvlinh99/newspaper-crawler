@@ -44,6 +44,7 @@ And now you must install packages:
     $ cd crawler / $ cd KTW06
     $ scrapy crawl threads
     ```
+    Cmd require you input a url to crawl, you can use a url in List-newspaper.txt
     Data will be save in folder name: N06
 - NLP
     ```sh
